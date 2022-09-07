@@ -195,4 +195,27 @@
     .links-section {
         margin: 50px 0;
     }
+
+    /* Modal */
+    .modal .modal-main {
+        max-width: auto;
+        margin-left: -10px;
+    }
+
+    .single-order .center {
+        margin: 0 -46px;
+    }
+
+    .single-order .left .img {
+        width: 80px;
+        height: 50px;
+    }
+    
+    .single-order .left .img>img {
+        width: 80px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Modal */
 }
