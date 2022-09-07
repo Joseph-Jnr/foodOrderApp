@@ -155,6 +155,14 @@
         margin-top: 50px;
     }
 
+    .food-card-section .search svg {
+        margin-right: 198px;
+    }
+
+    .food-card-section .search {
+        justify-content: center;
+    }
+
     .food-card {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 60px;

@@ -34,79 +34,8 @@
                                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                                     </svg>
                                 </a>
-                                <span class="cart-count">0</span>
+                                <span class="cart-count"></span>
                             </li>
-                            <div class="modal">
-                                <div class="modal-main">
-                                    <div class="modal-header">
-                                        <h2>Your Order</h2>
-                                        <svg xmlns="http://www.w3.org/2000/svg" id="closeModal" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                                        </svg>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="order-wrap">
-                                            <!-- Single Order -->
-                                            <div class="single-order">
-                                                <div class="main">
-                                                    <div class="left">
-                                                        <div class="img">
-                                                            <img src="assets/img/hero.jpg" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="center price_btns">
-                                                        <div class="item-btn decrement_btn">-</div>
-                                                        <div class="input"><input class="input_qty" type="text" value="1" disabled></div>
-                                                        <div class="item-btn increment_btn">+</div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <a href="#delete" data-id="1" class="delete_order btn btn-delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="desc">
-                                                    <p>Jellof Rice - XOF <span data-single-price="15000" class="single-price"><span class="totalPrice"></span></span></p>
-                                                </div>
-                                            </div>
-                                            <!-- Single Order -->
-                                            <div class="single-order">
-                                                <div class="main">
-                                                    <div class="left">
-                                                        <div class="img">
-                                                            <img src="assets/img/item5.jpg" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="center price_btns">
-                                                        <div class="item-btn decrement_btn">-</div>
-                                                        <div class="input"><input class="input_qty" type="text" value="1" disabled></div>
-                                                        <div class="item-btn increment_btn">+</div>
-                                                    </div>
-                                                    <div class="right">
-                                                        <a href="#delete" data-id="2" class="delete_order btn btn-delete">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-                                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="desc">
-                                                    <p>Spaghetti - XOF <span data-single-price="5000" class="single-price"><span class="totalPrice"></span></span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="sub-total">
-                                            <h3>Total: <span>XOF <span class="subTotalPrice"></span></span></h3>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="#clear" class="btn btn-outline">Clear Cart</a>
-                                        <a href="#checkout?payment_success" id="checkout" class="btn btn-fill">PAY</a>
-                                    </div>
-                                </div>
-                            </div>
                         </ul>
                         <div class="mobile-menu" id="hamburger">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -197,11 +126,17 @@
 
     <section class="food-card-section" id="preOrder">
         <div class="container">
+            <div class="search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                <input type="text" id="searchFood" placeholder="What do you want to eat?">
+            </div>
             <div class="food-card">
-                <div class="single-food-card" data-aos="zoom-in">
+                <div class="single-food-card" data-aos="zoom-in" id="myFood1">
                     <div class="food-card-header">
                         <div class="image">
-                            <img src="assets/img/item3.JPG" alt="spaghetti">
+                            <img src="assets/img/item3.JPG" alt="meat">
                         </div>
                         <span>XOF 2,500</span>
                     </div>
@@ -216,7 +151,7 @@
                     </div>
 
                     <div class="food-card-footer">
-                        <a href="#addToCart" class="orderBtn btn btn-outline">
+                        <a href="#addToCart" class="orderBtn btn btn-outline" data-name="Garnished Meat" data-price="2500" data-image="assets/img/item3.JPG">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                             </svg>
@@ -225,10 +160,10 @@
                     </div>
                 </div>
                 
-                <div class="single-food-card" data-aos="zoom-in">
+                <div class="single-food-card" data-aos="zoom-in" id="myFood2">
                     <div class="food-card-header">
                         <div class="image">
-                            <img src="assets/img/item4.JPG" alt="spaghetti">
+                            <img src="assets/img/item4.JPG" alt="baked beans">
                         </div>
                         <span>XOF 10,000</span>
                     </div>
@@ -243,7 +178,7 @@
                     </div>
 
                     <div class="food-card-footer">
-                        <a href="#addToCart" class="orderBtn btn btn-outline">
+                        <a href="#addToCart" class="orderBtn btn btn-outline" data-name="Baked Beans" data-price="10000" data-image="assets/img/item4.JPG">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                             </svg>
@@ -252,7 +187,7 @@
                     </div>
                 </div>
 
-                <div class="single-food-card" data-aos="zoom-in">
+                <div class="single-food-card" data-aos="zoom-in" id="myFood3">
                     <div class="food-card-header">
                         <div class="image">
                             <img src="assets/img/item5.jpg" alt="spaghetti">
@@ -270,7 +205,7 @@
                     </div>
 
                     <div class="food-card-footer">
-                        <a href="#addToCart" class="orderBtn btn btn-outline">
+                        <a href="#addToCart" class="orderBtn btn btn-outline" data-name="Spaghetti" data-price="5000" data-image="assets/img/item5.jpg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                             </svg>
@@ -279,10 +214,10 @@
                     </div>
                 </div>
 
-                <div class="single-food-card" data-aos="zoom-in">
+                <div class="single-food-card" data-aos="zoom-in" id="myFood4">
                     <div class="food-card-header">
                         <div class="image">
-                            <img src="assets/img/item1.jpg" alt="spaghetti">
+                            <img src="assets/img/item1.jpg" alt="amala">
                         </div>
                         <span>XOF 1,000</span>
                     </div>
@@ -297,7 +232,7 @@
                     </div>
 
                     <div class="food-card-footer">
-                        <a href="#addToCart" class="orderBtn btn btn-outline">
+                        <a href="#addToCart" class="orderBtn btn btn-outline" data-name="Amala" data-price="1000" data-image="assets/img/item1.jpg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                             </svg>
@@ -306,10 +241,10 @@
                     </div>
                 </div>
 
-                <div class="single-food-card" data-aos="zoom-in">
+                <div class="single-food-card" data-aos="zoom-in" id="myFood5">
                     <div class="food-card-header">
                         <div class="image">
-                            <img src="assets/img/item6.jpeg" alt="spaghetti">
+                            <img src="assets/img/item6.jpeg" alt="plain rice">
                         </div>
                         <span>XOF 1,500</span>
                     </div>
@@ -324,7 +259,7 @@
                     </div>
 
                     <div class="food-card-footer">
-                        <a href="#addToCart" class="orderBtn btn btn-outline">
+                        <a href="#addToCart" class="orderBtn btn btn-outline" data-name="Plain Rice & Stew" data-price="1500" data-image="assets/img/item6.jpeg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                             </svg>
@@ -333,10 +268,10 @@
                     </div>
                 </div>
 
-                <div class="single-food-card" data-aos="zoom-in">
+                <div class="single-food-card" data-aos="zoom-in" id="myFood6">
                     <div class="food-card-header">
                         <div class="image">
-                            <img src="assets/img/hero.jpg" alt="spaghetti">
+                            <img src="assets/img/hero.jpg" alt="jellof rice">
                         </div>
                         <span>XOF 15,000</span>
                     </div>
@@ -351,13 +286,19 @@
                     </div>
 
                     <div class="food-card-footer">
-                        <a href="#addToCart" class="orderBtn btn btn-outline">
+                        <a href="#addToCart" class="orderBtn btn btn-outline" data-name="Jellof Rice" data-price="15000" data-image="assets/img/hero.jpg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
                                 <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
                             </svg>
                              Order
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="empty-search">
+                <div class="no-record">
+                    <img src="assets/img/—Pngtree—no result search icon_6511543.png" width="150" height="auto" class="img-fluid">
+                    <h6>How far? We no get!</h6>
                 </div>
             </div>
         </div>
@@ -511,6 +452,101 @@
             </div>
         </div>
     </footer>
+
+
+    <div class="modal" id="cart">
+        <div class="modal-main">
+            <div class="modal-header">
+                <h2>Your Order</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" id="closeModal" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+            <div class="modal-body">
+                <div class="order-wrap"></div>
+                <div class="sub-total">
+                    <h3>Total: <span>XOF <span class="subTotalPrice"></span></span></h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#clear" id="clear" class="btn btn-outline">Clear Cart</a>
+                <a href="#checkout?payment_success" id="checkout" class="btn btn-fill">PAY</a>
+            </div>
+        </div>
+    </div>
+<!-- 
+
+    <div class="modal" id="cart">
+        <div class="modal-main">
+            <div class="modal-header">
+                <h2>Your Order</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" id="closeModal" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </div>
+            <div class="modal-body">
+                <div class="order-wrap">
+                    
+                    <div class="single-order">
+                        <div class="main">
+                            <div class="left">
+                                <div class="img">
+                                    <img src="assets/img/hero.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="center price_btns">
+                                <div class="item-btn decrement_btn">-</div>
+                                <div class="input"><input class="input_qty" type="text" value="1" disabled></div>
+                                <div class="item-btn increment_btn">+</div>
+                            </div>
+                            <div class="right">
+                                <a href="#delete" data-id="1" class="delete_order btn btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Jellof Rice - XOF <span data-single-price="15000" class="single-price"><span class="totalPrice"></span></span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="single-order">
+                        <div class="main">
+                            <div class="left">
+                                <div class="img">
+                                    <img src="assets/img/item5.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="center price_btns">
+                                <div class="item-btn decrement_btn">-</div>
+                                <div class="input"><input class="input_qty" type="text" value="1" disabled></div>
+                                <div class="item-btn increment_btn">+</div>
+                            </div>
+                            <div class="right">
+                                <a href="#delete" data-id="2" class="delete_order btn btn-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                        <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Spaghetti - XOF <span data-single-price="5000" class="single-price"><span class="totalPrice"></span></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-total">
+                    <h3>Total: <span>XOF <span class="subTotalPrice"></span></span></h3>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#clear" class="btn btn-outline">Clear Cart</a>
+                <a href="#checkout?payment_success" id="checkout" class="btn btn-fill">PAY</a>
+            </div>
+        </div>
+    </div> -->
 
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/sweetalert.min.js"></script>

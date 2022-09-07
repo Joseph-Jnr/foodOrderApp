@@ -362,6 +362,32 @@ nav ul li span:hover {
     overflow-y: scroll;
 }
 
+.order-wrap.empty-cart {
+    max-height: auto;
+    overflow-y: visible;
+    display: flex;
+    justify-content: center;
+}
+
+.order-wrap.empty-cart div {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.order-wrap.empty-cart div img {
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+.order-wrap.empty-cart div p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .single-order .main {
     display: flex;
     align-items: center;
@@ -483,19 +509,7 @@ nav ul li span:hover {
 .about-section .single-feature.onHover:nth-child(1) {
     transform: rotate(-6deg);
 }
-/* 
-.about-section .single-feature.onHover:nth-child(2) {
-    transform: rotate(6deg);
-}
 
-.about-section .single-feature.onHover:nth-child(3) {
-    transform: rotate(12deg);
-}
-
-.about-section .single-feature.onHover:nth-child(4) {
-    transform: rotate(0deg);
-}
- */
 .about-section .single-feature:nth-child(1),
 .about-section .single-feature:nth-child(4) {
     background: rgb(255, 233, 220);
@@ -551,6 +565,37 @@ nav ul li span:hover {
     background: transparent;
     padding-bottom: 120px;
     padding-top: 10px;
+}
+
+.food-card-section .search {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.food-card-section .search svg {
+    position: absolute;
+    margin-right: 190px;
+}
+
+.food-card-section .search input {
+    background: var(--grey);
+    height: 35px;
+    padding: 0 10px;
+    padding-left: 30px;
+    color: var(--black);
+    font-weight: 200;
+    font-size: 14px;
+    border: 1px solid rgb(228, 228, 228);
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+}
+
+.food-card-section .search input:active,
+.food-card-section .search input:focus {
+    border: 1px solid rgb(228, 228, 228) !important;
+    box-shadow: var(--box-shadow) !important;
 }
 
 .food-card {
@@ -830,3 +875,18 @@ nav ul li span:hover {
 .swal2-popup.swal2-toast {
     margin-top: 40px;
   }
+
+.empty-search {
+    display: flex;
+}
+
+.no-record {
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
