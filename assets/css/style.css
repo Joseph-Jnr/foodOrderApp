@@ -305,7 +305,7 @@ nav ul li span:hover {
     background: var(--white);
     padding: 20px;
     border-radius: 8px;
-    max-width: 780px;
+    min-width: 300px;
     min-height: auto;
     padding-bottom: 10px;
     margin: auto;
