@@ -1,4 +1,5 @@
 @import url(sweetalert.css);
+@import url(bootstrap-icons.css);
 *{
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
@@ -32,12 +33,28 @@ a {
     padding: 0 20px;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
 header{
-    background: var(--black-gradient), url(../img/hero.jpg);
+    background: var(--black-gradient), url(../img/hero.jpg); 
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} 
 /* 
 header .logo img {
     width: 150px;
@@ -50,28 +67,14 @@ header .logo {
     margin-top: 30px;
 }
 
-header nav.scrolled .logo {
-    margin: 15px 0;
-}
-
 header .logo a {
     font-size: 40px;
     font-weight: 900;
     color: var(--white);
 }
 
-header nav.scrolled .logo a {
-    color: var(--black);
-}
-
 header .logo a>span {
     color: var(--yellow);
-}
-
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 nav.scrolled {
@@ -84,6 +87,22 @@ nav.scrolled {
     opacity: 0.97;
 }
 
+header nav.scrolled .logo {
+    margin: 15px 0;
+}
+
+header nav.scrolled .logo a {
+    color: var(--black);
+}
+
+nav.scrolled ul {
+    margin-top: 15px;
+} 
+
+nav.scrolled ul li a{
+    color: var(--black);
+}
+
 nav ul,
 nav ul #menu {
     display: flex;
@@ -92,10 +111,6 @@ nav ul #menu {
 
 nav ul {
     margin-top: 40px;
-} 
-
-nav.scrolled ul {
-    margin-top: 15px;
 } 
 
 nav ul #menu {
@@ -119,10 +134,6 @@ nav ul li a{
     transition: var(--ease-in-out);
 }
 
-nav.scrolled ul li a{
-    color: var(--black);
-}
-
 nav ul li a:hover {
     color: var(--yellow);
 }
@@ -141,9 +152,6 @@ nav ul li span {
     padding: 10px;
     font-size: 12px;
     border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: -45px;
     margin-left: 40px;
 }
@@ -152,24 +160,27 @@ nav ul li span:hover {
     cursor: pointer;
 }
 
+#basket i {
+    color: var(--white);
+}
+
 .mobile-menu {
     margin-left: 40px;
     margin-top: 25px;
     display: none;
 }
 
-.mobile-menu svg {
-    width: 310px;
-    width: auto;
+.mobile-menu i {
+    font-size: 26px;
     color: var(--white);
 }
 
-.mobile-menu svg:hover {
+.mobile-menu i:hover {
     cursor: pointer;
 }
 
-.hero-text-area {
-    margin-top: 160px;
+.hero-area {
+    margin-top: 160px; 
 }
 
 .hero-text h1{
@@ -249,7 +260,9 @@ nav ul li span:hover {
     flex-direction: column;
 }
 
-.section-header svg {
+.section-header i {
+    color: var(--white);
+    font-size: 30px;
     margin: 10px auto;
 }
 
@@ -294,40 +307,35 @@ nav ul li span:hover {
     left: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.659);
-    min-width: 100%;
-    min-height: 100%;
     z-index: 1;
     display: none;
     padding: 20px;
 }
 
-.modal .modal-main {
-    background: var(--white);
+.modal .modal-wrap {
+    background: #fff;
+    width: 450px;
+    max-width: 500px;
+    height: auto;
     padding: 20px;
-    border-radius: 8px;
-    min-width: 300px;
-    min-height: auto;
-    padding-bottom: 10px;
     margin: auto;
-    transition: var(--ease-in-out);
+    border-radius: 8px;
 }
 
 .modal .modal-header {
-    margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.modal .modal-header svg {
+.modal .modal-header i {
     background: var(--grey);
     padding: 5px;
     border-radius: 8px;
-    width: 30px;
-    height: auto;
+    font-size: 20px;
 }
 
-.modal .modal-header svg:hover {
+.modal .modal-header i:hover {
     cursor: pointer;
 }
 
@@ -374,12 +382,11 @@ nav ul li span:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-width: 300px;
 }
 
 .order-wrap.empty-cart div img {
     margin: auto;
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
@@ -527,10 +534,12 @@ nav ul li span:hover {
     margin-left: -26px;
 }
 
-.about-section .single-feature .icon svg {
-    width: 50px;
-    height: auto;
+.about-section .single-feature .icon {
     padding: 20px 0;
+}
+
+.about-section .single-feature .icon i {
+    font-size: 45px;
 }
 
 .about-section-main .right {
@@ -551,7 +560,7 @@ nav ul li span:hover {
     max-width: fit-content;
 }
 
-.about-section-main .right a>svg {
+.about-section-main .right a>i {
     margin-left: 10px;
 }
 
@@ -574,7 +583,7 @@ nav ul li span:hover {
     align-items: center;
 }
 
-.food-card-section .search svg {
+.food-card-section .search i {
     position: absolute;
     margin-right: 190px;
 }
@@ -715,7 +724,7 @@ nav ul li span:hover {
     
 }
 
-.main-cta .cta-btn a>svg {
+.main-cta .cta-btn a>i {
     margin-right: 10px;
     
 }
@@ -802,6 +811,40 @@ nav ul li span:hover {
 
 /* Menu section end */
 
+/* App section */
+
+.app-section {
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(../img/y-so-serious-white.png);
+}
+
+.app-section .app-screen {
+    width: 100%;
+}
+
+.app-section .app-screen img {
+    width: 450px;
+    height: auto;
+}
+
+.app-section .text-area h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.app-section .text-area p {
+    font-weight: 200;
+}
+
+.app-section .download_btns {
+    margin-top: 20px;
+}
+
+.app-section .download_btns span:hover {
+    cursor: pointer;
+}
+
+/* App section end */
+
 /* Footer */
 
 .footer {
@@ -829,11 +872,15 @@ nav ul li span:hover {
 }
 
 .logo-section .socials a,
-.logo-section .socials svg {
-    width: 20px;
-    height: auto;
+.logo-section .socials i {
+    font-size: 20px;
     margin: auto;
     color: var(--white);
+    transition: var(--ease-in-out);
+}
+
+.logo-section .socials i:hover {
+    color: var(--yellow);
 }
 
 .links-section h3,
@@ -860,6 +907,10 @@ nav ul li span:hover {
     transition: var(--ease-in-out);
 }
 
+.links-section ul li i {
+    color: var(--white);
+}
+
 .links-section ul li a:hover {
     color: var(--yellow);
 }
@@ -868,6 +919,20 @@ nav ul li span:hover {
     color: var(--white);
     margin-bottom: 10px;
     font-weight: 200;
+}
+
+.credit {
+    margin-top: 50px;
+}
+
+.credit p {
+    color: var(--white);
+    font-weight: 200;
+    text-align: center;
+}
+
+.credit a {
+    color: var(--yellow);
 }
 
 /* Footer end */
@@ -890,3 +955,124 @@ nav ul li span:hover {
     max-width: 100%;
     height: auto;
 }
+
+/* Chat bot area */
+
+.chat-bot-btn {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    background: var(--black2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chat-bot-btn i {
+    color: var(--white);
+    font-size: 25px;
+}
+
+.chat-bot-btn span {
+    position: absolute;
+    background: rgb(203, 35, 35);
+    color: var(--white);
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    margin-top: -45px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-bot-frame {
+    position: fixed;
+    bottom: 14.8%;
+    right: 5%;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url(../img/webb.png);
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 8px;
+    display: none;
+    transition: var(--ease-in-out);
+}
+
+.chat-bot-frame .frame-header {
+    background: var(--black2);
+    height: 40px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.chat-bot-frame .frame-header h3,
+.chat-bot-frame .frame-header i {
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.chat-bot-frame .frame-header i {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.chat-bot-frame .frame-footer {
+    position: relative;
+    top: 77%;
+}
+
+.chat-bot-frame .frame-footer .input-area {
+    padding: 5px 15px;
+}
+
+.chat-bot-frame .frame-footer .input-area input {
+    height: 30px;
+    font-size: 14px;
+    font-weight: 200;
+    background: transparent;
+    border: none;
+    transition: var(--ease-in-out);
+}
+
+.chat-bot-frame .frame-footer .input-area input:focus, 
+.chat-bot-frame .frame-footer .input-area input:active {
+    outline: none;
+    border-bottom: 1px solid var(--black2);
+}
+
+.chat-bot-frame .frame-footer .input-area form {
+    background: rgb(214, 214, 214);
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.chat-bot-frame .frame-footer .input-area form  .camera{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.chat-bot-frame .frame-footer .input-area button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.chat-bot-frame .frame-footer .input-area button i {
+    color: var(--black2);
+    font-size: 18px;
+}
+
+/* Chat bot area end */

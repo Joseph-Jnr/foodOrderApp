@@ -43,7 +43,7 @@ $(document).ready(function () {
     $('#closeModal').click(function () {
         $('.modal').css('display', 'none');
     });
-});
+}); 
 
 /* About animation */
 
@@ -66,3 +66,31 @@ $(document).ready(function() {
         none.toggle(!$("#myFood1, #myFood2, #myFood3, #myFood4, #myFood5, #myFood6").filter(':visible').length)
     });
 });
+
+$('.app_btn').click(function () {
+    var imgUrl = $(this).attr('data-img')
+    swal.fire({
+    imageUrl: imgUrl,
+    imageWidth: 90,
+    imageHeight: 'auto',
+    title: 'Downloading...',
+    text: 'Please wait',
+    //icon: 'warning',
+    showConfirmButton: false,
+    allowOutsideClick: false,
+    timer: 5000,
+    //timerProgressBar: true
+    }).then(result => {
+        swal.fire({
+            title: 'App Downloaded',
+            text: 'Thanks for your download',
+            icon: 'success',
+            showCancelButton: false,
+            confirmButtonColor: 'rgb(0, 186, 108)'
+        })
+    });
+})
+
+$('.chat-bot-btn').click(function(){
+    $('.chat-bot-frame, .msg-count').toggle()
+})
