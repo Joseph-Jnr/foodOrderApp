@@ -77,6 +77,11 @@ header .logo a>span {
     color: var(--yellow);
 }
 
+nav {
+    position: relative;
+    z-index: 1;
+}
+
 nav.scrolled {
     background: var(--white) !important;
     transition: background 0.5s linear;
@@ -179,8 +184,8 @@ nav ul li span:hover {
     cursor: pointer;
 }
 
-.hero-area {
-    margin-top: 160px; 
+.hero-text {
+    margin-top: 180px;
 }
 
 .hero-text h1{
@@ -476,7 +481,7 @@ nav ul li span:hover {
     bottom: 0;
     background: url(../img/banner-4.png);
     background-repeat: no-repeat;
-    background-size: 1345px;
+    background-size: cover;
     z-index: -1;
 }
 
@@ -1020,14 +1025,24 @@ nav ul li span:hover {
     cursor: pointer;
 }
 
-.chat-bot-frame .frame-header i {
+.chat-bot-frame .frame-header h3>i {
     font-size: 12px;
     margin-left: 5px;
 }
 
+.chat-bot-frame .frame-header i:nth-child(2) {
+    font-size: 23px;
+    margin-left: 5px;
+}
+
+.chat-bot-frame .frame-body {
+    height: 80%;
+    overflow-y: scroll;
+}
+
 .chat-bot-frame .frame-footer {
     position: relative;
-    top: 77%;
+    top: 0;
 }
 
 .chat-bot-frame .frame-footer .input-area {
@@ -1056,7 +1071,7 @@ nav ul li span:hover {
     border: none;
 }
 
-.chat-bot-frame .frame-footer .input-area form  .camera{
+.chat-bot-frame .frame-footer .input-area form  .icons{
     margin-right: 10px;
     cursor: pointer;
 }
@@ -1073,6 +1088,121 @@ nav ul li span:hover {
 .chat-bot-frame .frame-footer .input-area button i {
     color: var(--black2);
     font-size: 18px;
+}
+
+.single-chat-area {
+    display: block;
+}
+
+.chat-bubble {
+    margin: 25px;
+    display: block;
+    position: relative;
+	max-width: 200px;
+	height: auto;
+	background: var(--black);
+    border-radius: 8px;
+}
+
+.sender>.chat-bubble {
+    background: rgb(183, 183, 183);
+}
+
+.receiver {
+    float: right;
+}
+
+.chat-time {
+    margin-top: -20px;
+    padding: 0px 30px;
+    float: left;
+    font-size: 12px;
+    color: rgb(129, 129, 129);
+}
+
+.chat-time>.seen {
+    color: skyblue;
+}
+
+.pull-right {
+    float: right;
+}
+
+.tri-left.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: auto;
+	left: -40px;
+    top: -8px;
+	bottom: auto;
+	border: 0px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-left.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    right: auto;
+	left: -20px;
+    top: 0px;
+	bottom: auto;
+    border-radius: 8px;
+	border: 20px solid;
+	border-color: rgb(183, 183, 183) transparent transparent transparent;
+}
+
+.tri-right.border.right-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -40px;
+    top: -8px;
+	bottom: auto;
+	border: 0px solid;
+	border-color: #666 transparent transparent transparent;
+}
+.tri-right.right-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: auto;
+	right: -20px;
+    top: 0px;
+	bottom: auto;
+    border-radius: 8px;
+	border: 20px solid;
+	border-color: var(--black) transparent transparent transparent;
+}
+
+.chat-text{
+    padding: 1em;
+	text-align: left;
+    line-height: 20px;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.chat-text ul {
+    display: block;
+    margin-left: -22px;
+    margin-top: 10px;
+    list-style: square;
+}
+
+.sender .chat-text{
+    color: var(--black2);
+}
+
+.chat-text p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
 }
 
 /* Chat bot area end */

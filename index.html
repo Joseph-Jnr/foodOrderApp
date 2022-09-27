@@ -462,15 +462,42 @@
     <!-- Chat Bot -->
     <div class="chat-bot-frame">
         <div class="frame-header container d-flex align-center justify-between">
-            <h3 class="d-flex align-center">Foodie cBot <i class="bi bi-patch-check-fill"></i></h3>
-            <i class="bi bi-three-dots"></i>
+            <h3 class="d-flex align-center">Foodie Bot <i class="bi bi-patch-check-fill"></i></h3>
+            <i class="bi bi-x close-bot"></i>
         </div>
-        <div class="frame-body"></div>
+        <div class="frame-body">
+            <div class="single-chat-area sender">
+                <div class="chat-bubble tri-left left-top">
+                    <div class="chat-text">
+                        <p>Hi there!👋 <br> What can we offer you today?</p>
+                        <h4>You can choose from a variety of delicious delicacies 😋 😉</h4>
+                        <ul>
+                            <li>Chicken and chips</li>
+                            <li>Shawarma</li>
+                            <li>Amala and ewedu</li>
+                            <li>Jellof rice</li>
+                            <li>Fried rice</li>
+                            <li>Beans and plantain</li>
+                        </ul>
+                    </div>
+                </div>
+                <small class="chat-time">Just now</small>
+            </div>
+
+            <div class="single-chat-area receiver">
+                <div class="chat-bubble tri-right right-top">
+                    <div class="chat-text">
+                        <p>I need a plate of jellof rice</p>
+                    </div>
+                </div>
+                <small class="chat-time pull-right">Delivered <i class="bi bi-check2"></i></small>
+            </div>
+        </div>
         <div class="frame-footer">
             <div class="input-area container">
-                <!-- <i class="bi bi-geo-alt"></i> -->
                 <form action="" class=" d-flex align-center justify-between" method="get">
-                    <i class="bi bi-camera camera"></i>
+                    <i class="bi bi-camera icons"></i>
+                    <i class="bi bi-geo-alt icons"></i> 
                     <input type="text" placeholder="Type a message">
                     <button type="submit"><i class="bi bi-send-fill"></i></button>
                 </form>

@@ -17,20 +17,20 @@ AOS.init({
     duration: 2000
 });
 
+/* Mobile Nav Toggle */
+
+$(document).ready(function () {
+    $('#hamburger').click(function () {
+        $('#menu').toggle('show');
+    });
+});
+
 /* Sticky Nav */
 
 $(function() {
     $(document).scroll(function () { 
         var $nav = $(".main-nav");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-});
-
-/* Mobile Nav Toggle */
-
-$(document).ready(function () {
-    $('#hamburger').click(function () {
-        $('#menu').toggle('show');
     });
 });
 
@@ -95,6 +95,11 @@ $('.chat-bot-btn').click(function(){
     $('.chat-bot-frame, .msg-count').toggle()
 })
 
+$('.close-bot').click(function(){
+    $('.chat-bot-frame').hide()
+    $('.msg-count').show()
+})
+
 //how to open camera using javascript?
 //var video = document.createElement('video');
 //video.setAttribute('playsinline', '');
@@ -116,5 +121,4 @@ $('.chat-bot-btn').click(function(){
 //navigator.mediaDevices.getUserMedia(constraints).then(function success(stream) {
 //  video.srcObject = stream;
 //});
-
 
